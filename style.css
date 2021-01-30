@@ -1,0 +1,89 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(202, 209, 228);
+}
+
+.app {
+    height: 80vh;
+    width: 600px;
+    box-shadow: 0 2px 8px -1px rgba(0, 0, 0, 0.2);
+    border-radius: 2rem;
+    background-color: #fff;
+    position: relative;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(159, 168, 190);
+    border-radius: 2rem 2rem 0 0;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(159, 168, 190);
+    border-radius: 0 0 2rem 2rem;
+}
+
+button.add {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    outline-style: none;
+    border: none;
+}
+
+input {
+    position: absolute;
+    bottom: 60px;
+    height: 30px;
+    width: 100%;
+}
+
+ul.list-wrap {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    bottom: 90px;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.list-wrap li {
+    padding: 1rem;
+    display: flex;
+}
+
+ul.list-wrap li>span {
+    margin-left: auto;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
